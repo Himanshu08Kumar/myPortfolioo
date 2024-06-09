@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+body {
+}
+#container {
+  height: auto;
+  width: 95vw;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 2.5vh;
+}
+/* #name1{
+    font-family: "Tilt Prism", sans-serif;
+} */
+
+.iconFon{
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+
+
+#des{
+  font-family:"Alegreya SC", serif;
+  font-size: 44px;
+}
+#name {
+  font-family: "Caveat", cursive;
+}
+#firstLogo {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+.word{
+  font-family: "Merriweather", serif;
+}
+
+
+
+#card {
+  /* border: 2px solid wheat; */
+  width: 25rem;
+  height: 23rem;
+  padding: 15px;
+}
+
+.card1{
+ 
+  width: 15rem;
+  height: 15rem;
+  padding: 15px;
+}
+
+@tailwind utilities;
