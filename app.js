@@ -17,13 +17,17 @@ document.querySelector(".homee").addEventListener("click", () => {
   );
 });
 
-const roles = ["Front-End Developer", "Mern Stack Developer"];
+const roles = ["Front-End Developer","Mern Stack Developer"];
 let index = 0;
+let isAnimating = false;
 function changeRole() {
+  if(isAnimating) return;
+
   let word = roles[index].split("");
   const dev = document.querySelector("#dev");
   dev.textContent = "";
   let wordIndex = 0;
+  isAnimating = true;
 
   const wordInterval = setInterval(() => {
     if (wordIndex < word.length) {
@@ -31,6 +35,7 @@ function changeRole() {
       wordIndex++;
     } else {
       clearInterval(wordInterval);
+      isAnimating = false;
     }
   }, 200);
   index = (index + 1) % roles.length;
@@ -42,10 +47,28 @@ document.querySelector("#resumeLink").addEventListener("click", (event) => {
   event.preventDefault();
 
   const link = document.createElement("a");
-  link.href =
-    "https://drive.google.com/uc?export=download&id=192Qf8032yQOy7NztmeWyZmUPxRed73Oy";
+  link.href ="https://drive.google.com/uc?export=download&id=192Qf8032yQOy7NztmeWyZmUPxRed73Oy";
   link.download = "Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+});
+
+
+document.getElementById('openFormButton').addEventListener('click', function() {
+  document.getElementById('formPopover').style.display = 'block';
+});
+
+document.getElementById('closeFormButton').addEventListener('click', function() {
+  document.getElementById('formPopover').style.display = 'none';
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const userEmail = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const mailtoLink = `mailto:himanshukumar802123@gmail.com?subject=Contact%20Form%20Submission&body=From:%20${encodeURIComponent(userEmail)}%0A%0A${encodeURIComponent(message)}`;
+  window.location.href = mailtoLink;
+  document.getElementById('formPopover').style.display = 'none';
+  document.getElementById('contactForm').reset();
 });

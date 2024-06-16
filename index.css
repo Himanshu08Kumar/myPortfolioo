@@ -1,10 +1,20 @@
 @tailwind base;
 @tailwind components;
-body {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+body {
+  width: 100%;
+  height: auto;
+  
+}
+
+
 #container {
   height: auto;
-  width: 95vw;
+  width: 95%;
   background-color: black;
   margin: auto;
   margin-bottom: 2.5vh;
@@ -13,16 +23,26 @@ body {
     font-family: "Tilt Prism", sans-serif;
 } */
 
-.iconFon{
+.iconFon {
   font-family: "Zen Dots", sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
 }
-
-
-
-#des{
-  font-family:"Alegreya SC", serif;
+.iconFon1{
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: wheat;
+}
+#abo{
+  font-family: "Merienda", cursive;
+}
+#abo1{
+  font-family: "Tinos", serif;
+  font-size: 1.2rem;
+}
+#des {
+  font-family: "Alegreya SC", serif;
   font-size: 44px;
 }
 #name {
@@ -45,11 +65,9 @@ body {
 .example::-webkit-scrollbar {
   display: none;
 }
-.word{
+.word {
   font-family: "Merriweather", serif;
 }
-
-
 
 #card {
   /* border: 2px solid wheat; */
@@ -58,11 +76,83 @@ body {
   padding: 15px;
 }
 
-.card1{
- 
+.card1 {
   width: 15rem;
   height: 15rem;
   padding: 15px;
+}
+.foot{
+  height: 25rem;
+}
+#foot1{
+  margin-right: 10rem;
+  
+}
+.footright{
+  width: 50%;
+}
+
+
+
+.form-popover {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  /* background-color: rgb(148, 144, 144);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+  border-radius: 10%;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm label {
+  margin-top: 10px;
+  
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 0.5rem;
+}
+
+#contactForm button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(156,163, 175);
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
 }
 
 @tailwind utilities;

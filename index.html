@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,27 +26,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="./icon/icons8-portfolio-96.png" rel="icon">
+
 </head>
 <body class="bg-orange-400 mt-6 example ">
     <div class="mt-10 rounded-3xl sm:flex-col" id="container">
-        <div class="flex justify-between">
+        <div class="md:flex-row sm:flex sm:flex-col   justify-between" >
             <p class="text-white ml-32 mt-10 text-3xl font-bold underline underline-offset-8 decoration-orange-400 hover:scale-110 duration-500"> Portfolio<span class="text-orange-500 text-3xl">.</span></p>
-            <div class=" flex  ">
-                <ul class="flex gap-8 mr-96 text-white cursor-pointer mt-10 text-2xl  ">
+            <div class="flex" >
+                <ul class="md:flex-row sm:flex sm:flex-col  gap-8 mr-96 text-white cursor-pointer mt-10 text-2xl  ">
                     <a href="#about"><li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">About</li></a>
                     <a href="#proj"><li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">Project</li></a>
                     <a href="#ski"> <li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">Skills</li></a>
-                   <a href="https://drive.google.com/file/d/192Qf8032yQOy7NztmeWyZmUPxRed73Oy/view?usp=sharing" download="resume.pdf" target="_blank"> <li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500" id="resumeLink">Resume</li></a>
-                   
-                </ul>
-                <button class="flex mt-10 mr-20 bg-orange-400 px-6 py-1 rounded-lg text-white font-semibold hover:scale-x-110 duration-300">Hire me!</button>
+                    <a href="https://drive.google.com/file/d/192Qf8032yQOy7NztmeWyZmUPxRed73Oy/view?usp=sharing" download="resume.pdf" target="_blank"> <li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500" id="resumeLink">Resume</li></a>
+                 </ul>
+                 <div class="flex "> <button class="flex mt-10 mr-20 bg-orange-400 px-6 py-1 rounded-lg text-white font-semibold hover:scale-x-110 duration-300" id="openFormButton">Hire me!</button></div>
+               
+                 <div id="formPopover" class="form-popover bg-black text-white border-2 border-dotted border-orange-500">
+                    <form id="contactForm">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required class="bg-gray-600 outline-3 outline-orange-400" placeholder="Enter Your Mail">
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required class="bg-gray-600 outline-3 outline-orange-400" placeholder="Leave your Message"></textarea>
+                        
+                        <button type="submit" class="border border-dotted border-orange-500 rounded-md">Send</button>
+
+                        
+                        <button type="button" id="closeFormButton" class="border border-dotted border-orange-500 rounded-md">Close</button>
+                    </form>
+                </div>  
             </div>
         </div>
         <div class="flex">
             <div class="left w-2/6 flex flex-col justify-center my-32 mx-20 ">
                 <h1 class="text-white font-bold" id="des">I'm Himanshu Kumar, a <p id="dev">Front-end Developer</p></h1>
                 <p class="text-white text-2xl my-8" id="name">I design web apps to turn your ideas into reality.</p>
-                <button class="text-white mx bg-orange-400 w-36 py-1  rounded-lg text-xl hover:animate-pulse">Get in touch</button>
+                <a href="#contact"><button class="text-white mx bg-orange-400 w-36 py-1  rounded-lg text-xl hover:animate-pulse">Get in touch</button></a>
+                
 
             </div>
             <div class="flex w-2/4 " id="firstLogo">
@@ -55,44 +80,44 @@
     </div>
     <div class="" id="about">
         <h1 class="text-3xl font-bold text-white mx-20 mt-20 underline underline-offset-8 decoration-orange-400">About</h1>
-        <p class="text-xl text-white mx-20 mt-7 pb-4 gap-x-1 word tracking-wide text-justify ">Hello! My name is Himanshu Kumar, and I am a dedicated web developer with a passion for creating dynamic and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in designing responsive web applications that provide a seamless user experience. I have a keen eye for detail and a commitment to writing clean, efficient code, continuously learning and staying updated with the latest industry trends and technologies. I have completed my Bachelor's of Engineering from Jain University, Bangalore, in Computer Science with a specialization in Software Engineering. My academic journey has equipped me with strong knowledge of Java programming, object-oriented programming principles. I am familiar with frameworks like Tailwind CSS and am currently learning ReactJS to further enhance my skill set.</p>
+        <p class="text-xl text-white mx-20 mt-7 pb-4 gap-x-1 word tracking-wide text-justify " id="abo">Hello! My name is Himanshu Kumar, and I am a dedicated web developer with a passion for creating dynamic and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in designing responsive web applications that provide a seamless user experience. I have a keen eye for detail and a commitment to writing clean, efficient code, continuously learning and staying updated with the latest industry trends and technologies. I have completed my Bachelor's of Engineering from Jain University, Bangalore, in Computer Science with a specialization in Software Engineering. My academic journey has equipped me with strong knowledge of Java programming, object-oriented programming principles. I am familiar with frameworks like Tailwind CSS and am currently learning ReactJS to further enhance my skill set.</p>
     </div>
     <div class="pb-5 ml-20" id="proj">    
         <h1 class="text-3xl font-bold text-white  mt-20 underline underline-offset-8 decoration-orange-400 mb-10">Project</h1>
         <div class="flex flex-wrap gap-8  ">
             <div class="iWeat my-3 bg-gradient-to-br from-gray-600 to-gray-950 rounded-lg hover:scale-105 duration-500 overflow-hidden hover:shadow-xl hover:shadow-gray-600" id="card">
             <h1 class="text-white text-center text-2xl font-semibold py-2">iWeather</h1>
-            <p class="text-white py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates ratione pariatur cumque veniam voluptate explicabo eius accusamus soluta nihil hic, eum commodi harum ex, illum quibusdam laudantium deserunt quo.</p>
-            <p class="text-white pt-11 pb-2">Tech Stack: </p>
+            <p class="text-white py-2 text-center" id="abo1">It provides real-time weather updates based on user location input. <br> Integrated third-party APIs to display accurate weather data and forecasts, enhancing user experience and engagement.</p>
+            <p class="text-white pt-11 pb-2 ">Tech Stack: <span class="iconFon1"> HTML, CSS, JS, Tailwind CSS</span></p>
             <p class="text-white py-2">Category: Web Development</p>
             </div>
     
             <div class="prep my-3 bg-gradient-to-br from-gray-950 to-gray-600 rounded-lg hover:scale-105 duration-500 overflow-hidden hover:shadow-xl hover:shadow-gray-600" id="card">
                 <h1 class="text-white text-center text-2xl font-semibold py-2">PrepIT</h1>
-                <p class="text-white py-2 text-center">Developed a comprehensive Android application using Android Studio to assist students in their placement preparations.<br>
+                <p class="text-white py-2 text-center" id="abo1">Developed a comprehensive Android application using Android Studio to assist students in their placement preparations.<br>
                 Managed and curated a diverse set of placement questions, creating a valuable resource for students.</p>
-                <p class="text-white pt-11 pb-2">Tech Stack:</p>
+                <p class="text-white pt-3 pb-2">Tech Stack: <span class="iconFon1">XML, JAVA, Firestore Database</span></p>
                 <p class="text-white py-2">Category: Android Development</p>
             </div>
 
          <div class="notee my-3 bg-gradient-to-br from-gray-600 to-gray-950 rounded-lg hover:scale-105 duration-500   overflow-hidden hover:shadow-xl hover:shadow-gray-600" id="card">
             <h1 class="text-white text-center text-2xl font-semibold py-2">Notepad</h1>
-            <p class="text-white py-2 text-center">Designed an intuitive user interface, prioritizing ease of use for note creation and management.<br>Integrated Firestore Database to enable cloud-based storage, ensuring data accessibility across devices.<br>Implemented features including search functionalities, and a user-friendly editor.</p>
-            <p class="text-white pb-2 py-6">Tech Stack:</p>
+            <p class="text-white py-2 text-center" id="abo1">Designed an intuitive user interface, prioritizing ease of use for note creation and management.<br>Integrated Firestore Database to enable cloud-based storage, ensuring data accessibility across devices.</p>
+            <p class="text-white pb-2 py-10">Tech Stack: <span class="iconFon1">XML, JAVA, Firestore Database</span></p>
             <p class="text-white py-2">Category: Android Development</p>
         </div>
 
             <div class="homee my-3 bg-gradient-to-br from-gray-600 to-gray-950 rounded-lg hover:scale-105 duration-500 overflow-hidden hover:shadow-xl hover:shadow-gray-600" id="card">
                 <h1 class="text-white text-center text-2xl font-semibold py-2">Home Automation System</h1>
-                <p class="text-white py-2 text-center">Designed and implemented an intuitive system for efficient control and monitoring of household devices<br>Ensured power-saving measures through centralized control and automation.<br>Enabled remote access via smartphones and internet, enhancing user convenience</p>
-                <p class="text-white pb-2 py-6">Tech Stack:</p>
+                <p class="text-white py-2 text-center" id="abo1">Designed and implemented an intuitive system for efficient control and monitoring of household devices.<br>Ensured power-saving measures through centralized control and automation.</p>
+                <p class="text-white pb-2 py-8">Tech Stack: <span class="iconFon1">C, Arduino IDE, PICSimLab</span></p>
                 <p class="text-white py-2">Category: IOT</p>
             </div>
         </div>
     </div>
     <div class="pb-5 ml-20 mr-20 " id="ski">    
         <h1 class="text-3xl font-bold text-white  mt-20 underline underline-offset-8 decoration-orange-400 mb-10">Skills</h1>
-        <div class="flex flex-wrap gap-x-20 gap-y-10 mb-10">
+        <div class="flex flex-wrap gap-x-24 gap-y-10 mb-10 ">
             <div class="card1 text-center text-white bg-gradient-to-tr from-stone-950 to-gray-700 rounded-lg hover:scale-110 duration-200 hover:shadow-lg hover:shadow-slate-500 cursor-pointer">
                 <img src="./icon/icons8-html (1).svg" alt="" class="w-20 h-20 m-auto mt-6">
                 <p class="mt-7 iconFon">HTML</p>
@@ -187,11 +212,33 @@
                 <p class ="mt-7 iconFon">VS Code</p>
                 <!-- <p>Descri</p> -->
             </div>
-
-            
-
-
         </div>
+    </div>
+    <div class=" foot bg-slate-950  rounded-b-3xl">
+        <div class="flex justify-between">
+        <div class="footleft mt-4 ml-40">
+            <div class=" flex flex-col mt-6" >
+                <p class="text-gray-300 text-3xl font-serif pb-3" id="contact">Contact Me</p>
+                <div class="flex"><span><img src="./icon/icons8-mail.svg" alt="" class="w-10 h-10 -mx-0.5"></span><p class="flex text-gray-400 text-lg pt-2 " > <a href="mailto:himanshukumar802123@gmail.com">Himanshu Kumar</a></p></div>
+
+                <div class="flex py-0.5"><span><img src="./icon/icons8-phone (1).svg" alt="" class="w-10 h-10 -m-0.5"></span><p class="flex text-gray-400 text-lg pt-2 "><a href="tel:+917903075829">+91 79030 75829</a></p></div>
+
+                <div class="flex py-0.5"><span><img src="./icon/icons8-linkedin.svg" alt="" class="w-8 h-8 "></span><p class="flex text-gray-400 text-lg pt-2 " > <a href="https://www.linkedin.com/in/himanshu-kumar-652336213/"> Let's Connect on LinkedIn</a></p></div>
+                
+            </div> 
+        </div>
+        <div class="footright flex items-end mt-10 flex-col" id="foot1">
+            <ul class="flex flex-col mr-12 " >
+                <li class="text-gray-300 font-serif text-3xl pb-3">Quick Links</li>
+                <a href="#about" class="py-1"><li class="text-gray-400 font-serif text-xl cursor-pointer  underline-animation">About</li></a>
+                <a href="#proj" class="py-1"><li class="text-gray-400 font-serif text-xl cursor-pointer underline-animation">Project</li></a>
+                <a href="#ski" class="py-1"><li class="text-gray-400 font-serif text-xl cursor-pointer  underline-animation">Skills</li></a>
+                
+            </ul>
+           
+        </div>
+    </div>
+        <p class=" text-white text-center mt-40">&copy; 2024 himanshukumar. All rights reserved.</p>
     </div>
 </div>    
 <script src="app.js"></script>
