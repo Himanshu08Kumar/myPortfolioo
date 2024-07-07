@@ -39,16 +39,16 @@
 </head>
 <body class="bg-orange-400 mt-6 example ">
     <div class="mt-10 rounded-3xl sm:flex-col" id="container">
-        <div class="md:flex-row sm:flex sm:flex-col   justify-between" >
-            <p class="text-white ml-32 mt-10 text-3xl font-bold underline underline-offset-8 decoration-orange-400 hover:scale-110 duration-500"> Portfolio<span class="text-orange-500 text-3xl">.</span></p>
-            <div class="flex" >
-                <ul class="md:flex-row sm:flex sm:flex-col  gap-8 mr-96 text-white cursor-pointer mt-10 text-2xl  ">
+        <div class="md:flex-row sm:flex sm:flex-col justify-around sticky top-0 bg-black pb-2 rounded-3xl" >
+            <p class="text-white mt-10 text-3xl font-bold underline underline-offset-8 decoration-orange-400 hover:scale-110 duration-500"><a href="http://127.0.0.1:5500/index.html">Portfolio<span class="text-orange-500 text-3xl">.</a></span></p>
+            
+                <ul class="md:flex-row sm:flex sm:flex-col gap-8 text-white cursor-pointer mt-10 text-2xl  ">
                     <a href="#about"><li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">About</li></a>
                     <a href="#proj"><li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">Project</li></a>
                     <a href="#ski"> <li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500">Skills</li></a>
                     <a href="https://drive.google.com/file/d/192Qf8032yQOy7NztmeWyZmUPxRed73Oy/view?usp=sharing" download="resume.pdf" target="_blank"> <li class="hover:underline underline-offset-4 hover:decoration-orange-400 duration-500" id="resumeLink">Resume</li></a>
                  </ul>
-                 <div class="flex "> <button class="flex mt-10 mr-20 bg-orange-400 px-6 py-1 rounded-lg text-white font-semibold hover:scale-x-110 duration-300" id="openFormButton">Hire me!</button></div>
+                 <div class="flex "> <button class="flex mt-10  bg-orange-400 px-6 py-1 rounded-lg text-white font-semibold hover:scale-x-110 duration-300" id="openFormButton">Hire me!</button></div>
                
                  <div id="formPopover" class="form-popover bg-black text-white border-2 border-dotted border-orange-500">
                     <form id="contactForm">
@@ -64,7 +64,7 @@
                         <button type="button" id="closeFormButton" class="border border-dotted border-orange-500 rounded-md">Close</button>
                     </form>
                 </div>  
-            </div>
+            
         </div>
         <div class="flex">
             <div class="left w-2/6 flex flex-col justify-center my-32 mx-20 ">
