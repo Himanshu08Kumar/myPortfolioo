@@ -1,3 +1,4 @@
+
 document.querySelector(".iWeat").addEventListener("click", () => {
   window.open("https://himanshu08kumar.github.io/WeatherApp/", "_blank");
 });
@@ -47,7 +48,7 @@ document.querySelector("#resumeLink").addEventListener("click", (event) => {
   event.preventDefault();
 
   const link = document.createElement("a");
-  link.href ="https://drive.google.com/uc?export=download&id=192Qf8032yQOy7NztmeWyZmUPxRed73Oy";
+  link.href ="https://drive.google.com/uc?export=download&id=1rBnKFPXI-W1Vs4c5GXIOjTn-ryaIoLUf";
   link.download = "Resume.pdf";
   document.body.appendChild(link);
   link.click();
@@ -72,3 +73,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   document.getElementById('formPopover').style.display = 'none';
   document.getElementById('contactForm').reset();
 });
+
+
+
