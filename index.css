@@ -154,5 +154,62 @@ body {
 .underline-animation:hover::after {
   width: 100%;
 }
+@media all and (max-width: 639px){
+  #uo0{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    padding-left: 20px;
+  }
+  #uo1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  #uo2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ #uo{
+  display: flex;
+  flex-direction: column
+ }
+ #uo #des{
+  font-size: 40px;
+ }
+ #uo #dev{
+  font-size: 40px;
+ }
+ #uo img{
+  width: 90%
+ }
+ #about #abo{
+  font-size: 18px;
+  font-stretch: expanded
+ }
+ #ski .card1{
+  width: 100%
+ }
+ #uofoot{
+  display: flex;
+  flex-direction: column;
+  
+ }
+ #foot0{
+flex: 1;
+ }
+ #foot1{
+  flex: 1
+ }
+ #uofoot #foot1{
+  
+ }
+}
 
 @tailwind utilities;
