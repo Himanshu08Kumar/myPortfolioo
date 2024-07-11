@@ -55,10 +55,12 @@ body {
 @keyframes slidein {
   from {
     transform: translateX(100%);
+    opacity: 0.1;
   }
 
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -207,9 +209,8 @@ flex: 1;
  #foot1{
   flex: 1
  }
- #uofoot #foot1{
-  
- }
+
 }
+
 
 @tailwind utilities;
