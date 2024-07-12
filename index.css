@@ -157,6 +157,9 @@ body {
   width: 100%;
 }
 @media all and (max-width: 639px){
+  .foot{
+    height: 20%;
+  }
   #uo0{
     display: flex;
     flex-direction: column;
@@ -183,17 +186,25 @@ body {
   flex-direction: column
  }
  #uo #des{
-  font-size: 40px;
+  font-size: 22px;
  }
  #uo #dev{
-  font-size: 40px;
+  font-size: 22px;
  }
  #uo img{
   width: 90%
  }
  #about #abo{
-  font-size: 18px;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-stretch: expanded
+ }
+ 
+ #proj #card{
+  width: 100%;
+  height: 100%;
+  margin-right: 20%;
+  
  }
  #ski .card1{
   width: 100%
@@ -207,7 +218,8 @@ body {
 flex: 1;
  }
  #foot1{
-  flex: 1
+  
+  margin-left:40%
  }
 
 }
